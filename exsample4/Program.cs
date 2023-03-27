@@ -7,7 +7,7 @@
 
 // 45(1,0,0) 53(1,0,1)
 
-int Numbers(string input)
+int Number(string input)
 {
   Console.Write(input);
   int num = Convert.ToInt32(Console.ReadLine());
@@ -30,7 +30,7 @@ int Numbers(string input)
 // return matrix;
 // }
 
-void print (int [, , ] matrix)
+void printMatrix (int [, , ] matrix)
 {
     for (int i = 0; i < matrix.GetLength (0); i++) 
     {
@@ -84,9 +84,9 @@ void CreateArray(int[,,] array3D)
 
 
 Console.WriteLine($"Введите размер массива1 m x n x l:");
-int m1 = Numbers ("Введите m: ");
-int n1 = Numbers ("Введите n: ");
-int l1 = Numbers ("Введите l: ");
+int m1 = Number ("Введите m: ");
+int n1 = Number ("Введите n: ");
+int l1 = Number ("Введите l: ");
 int [, ,] myMatrix1 = new int[m1, n1, l1];
 CreateArray(myMatrix1);
-print (myMatrix1);
+printMatrix (myMatrix1);
